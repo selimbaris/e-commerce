@@ -1,0 +1,384 @@
+﻿body {
+    background-color: #d5d5d5;
+    font-family: 'Trebuchet MS','Comic Sans MS';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 1920px;
+    height: 1800px;
+    margin: 0 auto;
+}
+
+header {
+    float: left;
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+}
+
+    header .logo {
+        float: left;
+        width: 1151px;
+        height: 200px;
+        border-right: 1px solid #000000;
+        color: red;
+        background: url('/images/12.png');
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header .menu {
+        float: left;
+        width: 768px;
+        height: 200px;
+        line-height: 200px;
+    }
+
+        header .menu ul {
+            list-style-type: none;
+            margin: 0px;
+            /*padding: 0px 100px;*/
+            overflow: hidden;
+            background-color: #f6f78e;
+        }
+
+            header .menu ul li {
+                float: left;
+                margin-left: -8px;
+                /*margin-left: 100px;*/
+                color: #555;
+            }
+
+                header .menu ul li a {
+                    border-right: 1px solid rgba(0,0,0,0.1);
+                    color: black;
+                }
+
+                    header .menu ul li a:hover {
+                        background-color: #f3f041;
+                    }
+
+.bb {
+    float: left;
+    /*margin-top: 50px;*/
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    width: 1151px;
+    height: 102px;
+    background-color: #b7e9f5;
+    line-height: 100px;
+}
+
+    .bb ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #f8a54a;
+        border-bottom: 1px solid #000000;
+    }
+
+        .bb ul li {
+            float: left;
+        }
+
+li a, .AnaLink {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 0px 30px;
+    text-decoration: none;
+}
+
+    li a:hover, .AcilirMenu:hover .AnaLink {
+        background-color: rgb(248, 179, 119);
+    }
+
+li.AcilirMenu {
+    display: inline-block;
+}
+
+.AcilirMenu_Icerik {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .AcilirMenu_Icerik a {
+        color: black;
+        padding: 0px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .AcilirMenu_Icerik a:hover {
+            background-color: #f1f1f1;
+        }
+
+.AcilirMenu:hover .AcilirMenu_Icerik {
+    display: block;
+}
+/*************************************************************************/
+li a, .AnaLink1 {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 0px 30px;
+    text-decoration: none;
+}
+
+    li a:hover, .AcilirMenu1:hover .AnaLink1 {
+        background-color: rgb(248, 179, 119);
+    }
+
+li.AcilirMenu1 {
+    display: inline-block;
+}
+
+.AcilirMenu1_Icerik1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .AcilirMenu1_Icerik1 a {
+        color: black;
+        padding: 0px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .AcilirMenu1_Icerik1 a:hover {
+            background-color: #f1f1f1;
+        }
+
+.AcilirMenu1:hover .AcilirMenu1_Icerik1 {
+    display: block;
+}
+/*********************************************************************/
+li a, .AnaLink2 {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 0px 30px;
+    text-decoration: none;
+}
+
+    li a:hover, .AcilirMenu2:hover .AnaLink2 {
+        background-color: rgb(248, 179, 119);
+    }
+
+li.AcilirMenu2 {
+    display: inline-block;
+}
+
+.AcilirMenu2_Icerik2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .AcilirMenu2_Icerik2 a {
+        color: black;
+        padding: 0px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .AcilirMenu2_Icerik2 a:hover {
+            background-color: #f1f1f1;
+        }
+
+.AcilirMenu2:hover .AcilirMenu2_Icerik2 {
+    display: block;
+}
+/************************************************************/
+li a, .AnaLink3 {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 0px 30px;
+    text-decoration: none;
+}
+
+    li a:hover, .AcilirMenu3:hover .AnaLink3 {
+        background-color: rgb(248, 179, 119);
+    }
+
+li.AcilirMenu3 {
+    display: inline-block;
+}
+
+.AcilirMenu3_Icerik3 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .AcilirMenu3_Icerik3 a {
+        color: black;
+        padding: 0px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .AcilirMenu3_Icerik3 a:hover {
+            background-color: #f1f1f1;
+        }
+
+.AcilirMenu3:hover .AcilirMenu3_Icerik3 {
+    display: block;
+}
+/********************************************************************/
+
+
+.arama {
+    float: left;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    width: 768px;
+    height: 102px;
+    background-color: #b7e9f5;
+}
+
+    .arama .txtarama {
+        float: left;
+        width: 300px;
+        height: 50px;
+        margin-left: 100px;
+        margin-top: 25px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #000000;
+        border-radius: 5px;
+    }
+
+    .arama .btnarama {
+        float: left;
+        width: 100px;
+        height: 50px;
+        margin-top: 25px;
+        cursor:pointer;
+    }
+
+
+
+
+
+/*************************************************************************/
+footer {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    background: url('/images/13.jpg');
+}
+
+    footer div#footerContainer {
+        width: 1500px;
+        position: relative;
+        margin: auto;
+        padding: 100px 0px;
+    }
+
+        footer div#footerContainer div.footerBox {
+            width: 500px;
+            position: relative;
+            float: left;
+            text-align: center;
+            color: #d5d5d5;
+        }
+
+            footer div#footerContainer div.footerBox h1 {
+                font-family: 'Bungee', cursive;
+                font-size: 60px;
+                margin-top: 30px;
+            }
+
+            footer div#footerContainer div.footerBox h2 {
+                font-size: 30px;
+                line-height: 60px;
+                border-bottom: 2px solid #e74c3c;
+                width: 450px;
+                margin: auto;
+            }
+
+            footer div#footerContainer div.footerBox p {
+                text-align: left;
+                line-height: 30px;
+                width: 450px;
+                margin: auto;
+            }
+
+            footer div#footerContainer div.footerBox input {
+                width: 450px;
+                height: 30px;
+                margin-top: 10px;
+                font-size: 18px;
+            }
+
+    footer div#copyright {
+        width: 100%;
+        background: #000000;
+        color: #ffffff;
+        font-size: 14px;
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+    color: #41220d
+}

@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="proje.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title></title>
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <%-- Footer metni yazısı--%>
+    <link href="https://fonts.googleapis.com/css?family=Bungee&amp;subset=latin-ext" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+
+        <div id="wrapper">
+            <header>
+
+                <div class="logo">
+                    
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="Anasayfa.aspx">Ana Sayfa</a>
+                        </li>
+                        <li>
+                            <a href="#">Hesabım</a>
+                        </li>
+                        <li>
+                            <a href="#">Alışveriş Sepetim</a>
+                        </li>
+                        <li>
+                            <a href="KayitOl.aspx">Kayıt Ol - Giriş Yap</a>
+                        </li>
+                        <li>
+                            <a href="Yonetici.aspx">Yönetici Giriş</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </header>
+
+            <div class="bb">
+                <ul>
+                    <li class="AcilirMenu">
+                        <a class="AnaLink" style="cursor:default;">Ayakkabı</a>
+                        <div class="AcilirMenu_Icerik">
+                            <a href="Basketbol.aspx">Basketbol Ayakkabıları</a>
+                            <a href="Gunluk.aspx">Günlük Ayakkabı</a>
+                        </div>
+                    </li>
+                     <li class="AcilirMenu1">
+                         <a class="AnaLink1" style="cursor:default;">Giyim</a>
+                         <div class="AcilirMenu1_Icerik1">
+                             <a href="Tisort.aspx">Tişört</a>
+                             <a href="Forma.aspx">Forma</a>
+                         </div>
+                    </li>
+                     <li class="AcilirMenu2">
+                         <a class="AnaLink2" style="cursor:default;">Aksesuar</a>
+                         <div class="AcilirMenu2_Icerik2">
+                             <a href="Canta.aspx">Çanta</a>
+                             <a href="Top.aspx">Top</a>
+                             <a href="#">Bileklik</a>
+                         </div>
+                    </li>
+                     <li class="AcilirMenu3">
+                         <a class="AnaLink3" style="cursor:default;">Şapka</a>
+                         <div class="AcilirMenu3_Icerik3">
+                             <a href="#">LifeStyle</a>
+                             <a href="Sapka.aspx">New Era NBA Koleksiyonu</a>
+                         </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="arama">
+                
+                <asp:TextBox ID="txtarama" CssClass="txtarama" runat="server" placeholder="Ne aramıştınız?" />
+                <asp:Button ID="btnarama"  CssClass="btnarama" runat="server" Text="Bul" />
+
+            </div>        
+            
+            <div class="master">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            </div>
+            
+        </div>
+        </form>
+        <footer>
+            <div id="footerContainer">
+                <div class="footerBox">
+                    <h1>SONSANIYE</h1>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-google"></a>
+                </div>
+                <div class="footerBox">
+                    <h2>BİZE ULAŞIN</h2>
+                    <p><span style="color: #e74c3c;">Tel</span>: 0532 066 80 80</p>
+                    <p><span style="color: #e74c3c;">E-mail</span>: info@sonsaniye.com</p>
+                    <p><span style="color: #e74c3c;">Web</span>: www.sonsaniye.com</p><br />
+                    <p><span style="color: #e74c3c;">Adres</span>: Kartaltepe Mahallesi, Vatan Sokak, No:10/1, Bakırköy/İstanbul</p>
+                </div>
+                <div class="footerBox">
+                    <h2>ABONE OL</h2>
+                    <p>Sitemizde gerçekleşen indirimlerden ve etkinliklerden haberdar olmak istiyorsanız e-mail adresinizi girmeniz yeterli olacaktır.</p>
+                    <form>
+                        <input type="email" name="email" placeholder="E-mail Adresinizi Giriniz" required="required" /><br />
+                        <input type="submit" value="ABONE OL" style="background:#e74c3c; color: #ffffff; cursor: pointer;" />
+                    </form>
+                </div>
+
+                <div style="clear: left";></div>
+            </div>
+            <div id="copyright">
+                &copy 2021  - Bu web sitesi Karabük Üniversitesi 1810226047 no'lu öğrencinin proje ödevidir. Gerçek bir mağaza değildir. Tüm hakları saklıdır.
+            </div>
+        </footer>
+
+</body>
+</html>
